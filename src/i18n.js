@@ -10,7 +10,10 @@ const resources = {
         en: {
                 translation: {
                         terms: {
-                                title: "Terms of Service",
+                                title: "Privacy Policy",
+                                policyInfo: {
+                                        intro: "This privacy policy applies to the [wecareu] app (hereinafter referred to as 'the App') provided by [Lameditech] (hereinafter referred to as 'the Company').",
+                                },
                                 privacy: {
                                         title: "1. Privacy Protection",
                                         a: "a. Users must manage their devices safely to protect personal information.",
@@ -41,7 +44,10 @@ const resources = {
         ko: {
                 translation: {
                         terms: {
-                                title: "약관 안내",
+                                title: "개인정보 처리방침",
+                                policyInfo: {
+                                        intro: "본 개인정보처리방침은 [Lameditech] (이하 '회사')가 제공하는 [wecareu] (이하 '앱')에 적용됩니다.",
+                                },
                                 privacy: {
                                         title: "1. 개인 정보 보호",
                                         a: "ㄱ. 이용자는 개인 정보를 보호하기 위해 기기를 안전하게 관리해야 합니다.",
@@ -72,7 +78,10 @@ const resources = {
         ja: {
                 translation: {
                         terms: {
-                                title: "利用規約",
+                                title: "個人情報保護方針",
+                                policyInfo: {
+                                        intro: "本個人情報保護方針は、[Lameditech]（以下「会社」）が提供する[wecareu]（以下「アプリ」）に適用されます。",
+                                },
                                 privacy: {
                                         title: "1. 個人情報保護",
                                         a: "a. 利用者は個人情報を保護するため、デバイスを安全に管理する必要があります。",
@@ -103,7 +112,10 @@ const resources = {
         "zh-CN": {
                 translation: {
                         terms: {
-                                title: "服务条款",
+                                title: "隐私政策",
+                                policyInfo: {
+                                        intro: "本隐私政策适用于[Lameditech]（以下简称“公司”）提供的[wecareu]（以下简称“应用”）。",
+                                },
                                 privacy: {
                                         title: "1. 隐私保护",
                                         a: "a. 用户必须安全管理设备以保护个人信息。",
@@ -134,7 +146,10 @@ const resources = {
         es: {
                 translation: {
                         terms: {
-                                title: "Términos de servicio",
+                                title: "Política de privacidad",
+                                policyInfo: {
+                                        intro: "Esta política de privacidad se aplica a la aplicación [wecareu] (en adelante, la 'App') proporcionada por [Lameditech] (en adelante, la 'Empresa').",
+                                },
                                 privacy: {
                                         title: "1. Protección de privacidad",
                                         a: "a. Los usuarios deben gestionar sus dispositivos de forma segura para proteger la información personal.",
@@ -165,7 +180,10 @@ const resources = {
         "pt-BR": {
                 translation: {
                         terms: {
-                                title: "Termos de serviço",
+                                title: "Política de Privacidade",
+                                policyInfo: {
+                                        intro: "Esta política de privacidade se aplica ao aplicativo wecareu (doravante denominado 'App') fornecido pela Lameditech (doravante denominada 'Empresa').",
+                                },
                                 privacy: {
                                         title: "1. Proteção de privacidade",
                                         a: "a. Os usuários devem gerenciar seus dispositivos com segurança para proteger informações pessoais.",

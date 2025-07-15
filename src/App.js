@@ -60,7 +60,9 @@ function App() {
                                         </button>
                                 </div>
                         </header>
-
+                        <p className="policy-intro">
+                                {t("terms.policyInfo.intro")}
+                        </p>
                         <main className="policy-content">
                                 {/* 각 섹션을 t() 함수를 통해 불러옵니다. */}
                                 <section>

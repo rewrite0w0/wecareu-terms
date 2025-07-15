@@ -68,3 +68,13 @@ body {
         font-size: 0.9em;
         color: #6c757d;
 }
+
+.policy-intro {
+        font-style: italic;
+        color: #555;
+        background-color: #f0f0f0;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        text-align: center;
+}
