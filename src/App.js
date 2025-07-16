@@ -14,9 +14,21 @@ function App() {
         return (
                 <div className="container">
                         <header className="header">
-                                <h1>{t("terms.title")}</h1>
+                                <div className="logo-section">
+                                        <img
+                                                src="/logo192.png"
+                                                alt="WeCareU Logo"
+                                                className="logo"
+                                        />
+                                        <h1>{t("terms.title")}</h1>
+                                </div>
                                 <div className="language-switcher">
                                         <button
+                                                className={
+                                                        i18n.language === "ko"
+                                                                ? "active"
+                                                                : ""
+                                                }
                                                 onClick={() =>
                                                         changeLanguage("ko")
                                                 }
@@ -24,6 +36,11 @@ function App() {
                                                 한국어
                                         </button>
                                         <button
+                                                className={
+                                                        i18n.language === "en"
+                                                                ? "active"
+                                                                : ""
+                                                }
                                                 onClick={() =>
                                                         changeLanguage("en")
                                                 }
@@ -31,6 +48,11 @@ function App() {
                                                 English
                                         </button>
                                         <button
+                                                className={
+                                                        i18n.language === "ja"
+                                                                ? "active"
+                                                                : ""
+                                                }
                                                 onClick={() =>
                                                         changeLanguage("ja")
                                                 }
@@ -38,6 +60,12 @@ function App() {
                                                 日本語
                                         </button>
                                         <button
+                                                className={
+                                                        i18n.language ===
+                                                        "zh-CN"
+                                                                ? "active"
+                                                                : ""
+                                                }
                                                 onClick={() =>
                                                         changeLanguage("zh-CN")
                                                 }
@@ -45,6 +73,11 @@ function App() {
                                                 中文
                                         </button>
                                         <button
+                                                className={
+                                                        i18n.language === "es"
+                                                                ? "active"
+                                                                : ""
+                                                }
                                                 onClick={() =>
                                                         changeLanguage("es")
                                                 }
@@ -52,6 +85,12 @@ function App() {
                                                 Español
                                         </button>
                                         <button
+                                                className={
+                                                        i18n.language ===
+                                                        "pt-BR"
+                                                                ? "active"
+                                                                : ""
+                                                }
                                                 onClick={() =>
                                                         changeLanguage("pt-BR")
                                                 }
