@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./App.css";
 import { resources } from "./i18n";
@@ -7,13 +7,17 @@ function App() {
 	// i18next의 hook을 사용합니다.
 	const { t, i18n } = useTranslation();
 
+	const currentLang = i18n.language?.substring(0, 2) || "ko";
 	// 언어 변경 함수
 	const changeLanguage = (lng) => {
 		i18n.changeLanguage(lng);
 	};
 
 	const LANGUAGE_LIST = Object.keys(resources);
-	const currentTerms = resources[i18n.language]?.translation?.terms || {};
+	const currentTerms =
+		resources[currentLang]?.translation?.terms ||
+		resources["ko"]?.translation?.terms ||
+		{};
 	const sectionKeys = Object.keys(currentTerms).filter(
 		(key) => !["title", "policyInfo", "subTitle", "lang"].includes(key),
 	);
