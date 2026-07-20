@@ -1,144 +1,72 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./App.css";
+import { resources } from "./i18n";
 
 function App() {
-        // i18next의 hook을 사용합니다.
-        const { t, i18n } = useTranslation();
+	// i18next의 hook을 사용합니다.
+	const { t, i18n } = useTranslation();
 
-        // 언어 변경 함수
-        const changeLanguage = (lng) => {
-                i18n.changeLanguage(lng);
-        };
+	// 언어 변경 함수
+	const changeLanguage = (lng) => {
+		i18n.changeLanguage(lng);
+	};
 
-        return (
-                <div className="container">
-                        <header className="header">
-                                <div className="logo-section">
-                                        <img
-                                                src="/logo192.png"
-                                                alt="WeCareU Logo"
-                                                className="logo"
-                                        />
-                                        <h1>{t("terms.title")}</h1>
-                                </div>
-                                <div className="language-switcher">
-                                        <button
-                                                className={
-                                                        i18n.language === "ko"
-                                                                ? "active"
-                                                                : ""
-                                                }
-                                                onClick={() =>
-                                                        changeLanguage("ko")
-                                                }
-                                        >
-                                                한국어
-                                        </button>
-                                        <button
-                                                className={
-                                                        i18n.language === "en"
-                                                                ? "active"
-                                                                : ""
-                                                }
-                                                onClick={() =>
-                                                        changeLanguage("en")
-                                                }
-                                        >
-                                                English
-                                        </button>
-                                        <button
-                                                className={
-                                                        i18n.language === "ja"
-                                                                ? "active"
-                                                                : ""
-                                                }
-                                                onClick={() =>
-                                                        changeLanguage("ja")
-                                                }
-                                        >
-                                                日本語
-                                        </button>
-                                        <button
-                                                className={
-                                                        i18n.language ===
-                                                        "zh-CN"
-                                                                ? "active"
-                                                                : ""
-                                                }
-                                                onClick={() =>
-                                                        changeLanguage("zh-CN")
-                                                }
-                                        >
-                                                中文
-                                        </button>
-                                        <button
-                                                className={
-                                                        i18n.language === "es"
-                                                                ? "active"
-                                                                : ""
-                                                }
-                                                onClick={() =>
-                                                        changeLanguage("es")
-                                                }
-                                        >
-                                                Español
-                                        </button>
-                                        <button
-                                                className={
-                                                        i18n.language ===
-                                                        "pt-BR"
-                                                                ? "active"
-                                                                : ""
-                                                }
-                                                onClick={() =>
-                                                        changeLanguage("pt-BR")
-                                                }
-                                        >
-                                                Português
-                                        </button>
-                                </div>
-                        </header>
-                        <p className="policy-intro">
-                                {t("terms.policyInfo.intro")}
-                        </p>
-                        <main className="policy-content">
-                                {/* 각 섹션을 t() 함수를 통해 불러옵니다. */}
-                                <section>
-                                        <h2>{t("terms.privacy.title")}</h2>
-                                        <p>{t("terms.privacy.a")}</p>
-                                        <p>{t("terms.privacy.b")}</p>
-                                </section>
+	const LANGUAGE_LIST = Object.keys(resources);
+	const currentTerms = resources[i18n.language]?.translation?.terms || {};
+	const sectionKeys = Object.keys(currentTerms).filter(
+		(key) => !["title", "policyInfo", "subTitle", "lang"].includes(key),
+	);
 
-                                <section>
-                                        <h2>{t("terms.service.title")}</h2>
-                                        <p>{t("terms.service.a")}</p>
-                                        <p>{t("terms.service.b")}</p>
-                                </section>
+	return (
+		<div className="container">
+			<header className="header">
+				<div className="logo-section">
+					<img src="/logo192.png" alt="WeCareU Logo" className="logo" />
+					<h1>{t("terms.title")}</h1>
+				</div>
+				<div className="language-switcher">
+					{LANGUAGE_LIST?.map((lang, i) => {
+						return (
+							<button
+								className={i18n.language === lang ? "active" : ""}
+								onClick={() => changeLanguage(lang)}
+								key={i}
+							>
+								{lang}
+							</button>
+						);
+					})}
+				</div>
+			</header>
+			<p className="policy-intro">{t("terms.policyInfo.intro")}</p>
 
-                                <section>
-                                        <h2>
-                                                {t("terms.serviceChange.title")}
-                                        </h2>
-                                        <p>{t("terms.serviceChange.a")}</p>
-                                </section>
+			<main className="policy-content">
+				{/* 하드코딩 섹션들을 싹 걷어내고 i18n 구조를 따라 동적 렌더링합니다. */}
+				{sectionKeys.map((sectionKey) => {
+					const sectionData = currentTerms[sectionKey] || {};
 
-                                <section>
-                                        <h2>{t("terms.limited.title")}</h2>
-                                        <p>{t("terms.limited.a")}</p>
-                                </section>
+					// 해당 조항 안에서 'title'을 제외한 본문 문항 키들(['a', 'b', 'c'] 등) 추출
+					const itemKeys = Object.keys(sectionData).filter(
+						(key) => key !== "title",
+					);
 
-                                <section>
-                                        <h2>{t("terms.termsChange.title")}</h2>
-                                        <p>{t("terms.termsChange.a")}</p>
-                                </section>
-                        </main>
+					return (
+						<section key={sectionKey}>
+							<h2>{sectionData.title}</h2>
+							{itemKeys.map((itemKey) => (
+								<p key={itemKey}>{sectionData[itemKey]}</p>
+							))}
+						</section>
+					);
+				})}
+			</main>
 
-                        <footer className="footer">
-                                <p>{t("terms.subTitle")}</p>
-                        </footer>
-                </div>
-        );
+			<footer className="footer">
+				<p>{t("terms.subTitle")}</p>
+			</footer>
+		</div>
+	);
 }
 
 export default App;
