@@ -1,169 +1,207 @@
 /* 전체 컨테이너 */
 .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-                "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-                "Helvetica Neue", sans-serif;
-        line-height: 1.6;
-        color: #333;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	line-height: 1.6;
+	color: #333;
 }
 
 /* 헤더 스타일 */
 .header {
-        text-align: center;
-        margin-bottom: 40px;
-        padding-bottom: 20px;
-        border-bottom: 2px solid #e0e0e0;
+	text-align: center;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #e0e0e0;
 }
 
 /* 로고 섹션 */
 .logo-section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	margin-bottom: 20px;
 }
 
 .logo {
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
+	width: 60px;
+	height: 60px;
+	object-fit: contain;
 }
 
 .header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-        color: #2c3e50;
-        font-weight: 600;
+	margin: 0;
+	font-size: 2.5rem;
+	color: #2c3e50;
+	font-weight: 600;
 }
 
 /* 언어 선택기 */
 .language-switcher {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-top: 20px;
 }
 
 .language-switcher button {
-        padding: 8px 16px;
-        border: 2px solid #3498db;
-        background-color: white;
-        color: #3498db;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 14px;
-        font-weight: 500;
-        transition: all 0.3s ease;
+	padding: 8px 16px;
+	border: 2px solid #3498db;
+	background-color: white;
+	color: #3498db;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	transition: all 0.3s ease;
 }
 
 .language-switcher button:hover {
-        background-color: #3498db;
-        color: white;
+	background-color: #3498db;
+	color: white;
 }
 
 .language-switcher button.active {
-        background-color: #3498db;
-        color: white;
+	background-color: #3498db;
+	color: white;
 }
 
 /* 정책 소개 */
 .policy-intro {
-        background-color: #f8f9fa;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 30px;
-        font-size: 1.1rem;
-        color: #555;
-        border-left: 4px solid #3498db;
+	background-color: #f8f9fa;
+	padding: 20px;
+	border-radius: 8px;
+	margin-bottom: 30px;
+	font-size: 1.1rem;
+	color: #555;
+	border-left: 4px solid #3498db;
 }
 
 /* 메인 콘텐츠 */
 .policy-content {
-        margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .policy-content section {
-        margin-bottom: 30px;
-        padding: 20px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .policy-content h2 {
-        color: #2c3e50;
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-        padding-bottom: 10px;
-        border-bottom: 2px solid #ecf0f1;
+	color: #2c3e50;
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ecf0f1;
 }
 
 .policy-content p {
-        margin-bottom: 12px;
-        color: #555;
-        font-size: 1rem;
+	margin-bottom: 12px;
+	color: #555;
+	font-size: 1rem;
 }
 
 /* 푸터 */
 .footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #f8f9fa;
-        border-radius: 8px;
-        color: #666;
-        font-size: 0.9rem;
+	text-align: center;
+	padding: 20px;
+	background-color: #f8f9fa;
+	border-radius: 8px;
+	color: #666;
+	font-size: 0.9rem;
+}
+
+/* 1. RTL 기본 폰트 및 텍스트 방향 설정 */
+[dir="rtl"] {
+	text-align: right;
+	/* 아랍어 전용 폰트를 지정하면 가독성이 훨씬 좋아집니다 */
+	font-family: "Tahoma", "Segoe UI", "Amiri", sans-serif;
+}
+
+/* 2. Logical Properties 활용 (강력 추천)
+   left/right 대신 inline-start / inline-end를 쓰면 
+   RTL/LTR에 따라 여백 방향이 자동으로 반전됩니다. */
+
+.terms-container {
+	/* 기존: padding-left: 20px; */
+	padding-inline-start: 20px;
+
+	/* 기존: margin-right: 10px; */
+	margin-inline-end: 10px;
+}
+
+/* 3. 목록(ㄱ., ㄴ. 또는 a., b. 등) 정렬 대응 */
+.terms-item {
+	display: flex;
+	flex-direction: row; /* LTR에서는 왼쪽->오른쪽, RTL에서는 오른쪽->왼쪽으로 자동 전환 */
+	gap: 8px;
+}
+
+/* 4. 특정 요소만 수동으로 RTL 예외 처리가 필요할 때 */
+[dir="rtl"] .privacy-title {
+	text-align: right;
+}
+
+/* 외부 링크나 URL(https://...)은 RTL 환경에서도 LTR(왼쪽->오른쪽)을 유지해야 깨지지 않습니다 */
+[dir="rtl"] .external-link {
+	direction: ltr;
+	unicode-bidi: embed;
+	display: inline-block;
 }
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
-        .container {
-                padding: 15px;
-        }
+	.container {
+		padding: 15px;
+	}
 
-        .header h1 {
-                font-size: 2rem;
-        }
+	.header h1 {
+		font-size: 2rem;
+	}
 
-        .logo {
-                width: 50px;
-                height: 50px;
-        }
+	.logo {
+		width: 50px;
+		height: 50px;
+	}
 
-        .language-switcher {
-                gap: 8px;
-        }
+	.language-switcher {
+		gap: 8px;
+	}
 
-        .language-switcher button {
-                padding: 6px 12px;
-                font-size: 13px;
-        }
+	.language-switcher button {
+		padding: 6px 12px;
+		font-size: 13px;
+	}
 
-        .policy-content section {
-                padding: 15px;
-        }
+	.policy-content section {
+		padding: 15px;
+	}
 }
 
 @media (max-width: 480px) {
-        .logo-section {
-                flex-direction: column;
-                gap: 10px;
-        }
+	.logo-section {
+		flex-direction: column;
+		gap: 10px;
+	}
 
-        .header h1 {
-                font-size: 1.8rem;
-        }
+	.header h1 {
+		font-size: 1.8rem;
+	}
 
-        .language-switcher {
-                flex-direction: column;
-                align-items: center;
-        }
+	.language-switcher {
+		flex-direction: column;
+		align-items: center;
+	}
 
-        .language-switcher button {
-                width: 120px;
-        }
+	.language-switcher button {
+		width: 120px;
+	}
 }

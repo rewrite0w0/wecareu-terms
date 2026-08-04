@@ -6,6 +6,7 @@ import { resources } from "./i18n";
 function App() {
 	// i18next의 hook을 사용합니다.
 	const { t, i18n } = useTranslation();
+	const isRtl = i18n.language === "ar-gulf" || i18n.language === "ar";
 
 	const currentLang = i18n.language?.substring(0, 2) || "ko";
 	// 언어 변경 함수
@@ -23,7 +24,11 @@ function App() {
 	);
 
 	return (
-		<div className="container">
+		// <div className="container">
+		<div
+			className={`terms-wrapper ${isRtl ? "rtl" : "ltr"}`}
+			dir={isRtl ? "rtl" : "ltr"}
+		>
 			<header className="header">
 				<div className="logo-section">
 					<img src="/logo192.png" alt="WeCareU Logo" className="logo" />
