@@ -385,6 +385,293 @@ export const resources = {
 			},
 		},
 	},
+	// 폴란드어 (Poland)
+	pl: {
+		translation: {
+			terms: {
+				title: "Polityka Prywatności",
+				policyInfo: {
+					intro:
+						"Niniejsza Polityka Prywatności ma zastosowanie do aplikacji [wecareu] (zwanej dalej „Aplikacją”) dostarczanej przez [Lameditech] (zwaną dalej „Firmą”).",
+				},
+				privacy: {
+					title: "1. Ochrona Danych Osobowych",
+					a: "a. Użytkownik musi bezpiecznie zarządzać swoim urządzeniem, aby chronić swoje dane osobowe.",
+					b: "b. Firma dokłada wszelkich starań, aby chronić dane osobowe użytkowników i nie udostępnia ich stronom trzecim.",
+				},
+				service: {
+					title: "2. Korzystanie z Usługi",
+					a: "a. Użytkownicy muszą korzystać z niniejszej Usługi wyłącznie w zgodnych z prawem celach i nie mogą naruszać praw innych osób.",
+					b: "b. W przypadku wykrycia nielegalnych działań podczas korzystania z Usługi, wyłączną odpowiedzialność ponosi użytkownik.",
+				},
+				serviceChange: {
+					title: "3. Świadczenie i Modyfikacja Usług",
+					a: "a. Firma dokłada starań, aby świadczyć Usługę i w razie potrzeby może zmienić jej treść po uprzednim powiadomieniu.",
+				},
+				limited: {
+					title: "4. Ograniczenie Odpowiedzialności",
+					a: "a. Firma dąży do zapewnienia prawidłowego świadczenia Usługi, ale nie ponosi odpowiedzialności za szkody wynikające z korzystania z Usługi.",
+				},
+				termsChange: {
+					title: "5. Zmiany w Regulaminie",
+					a: "Powiadomienia o zmianach będą publikowane za pośrednictwem strony internetowej lub aplikacji.",
+				},
+				storagePolicy: {
+					title: "6. Polityka Przechowywania Danych i Procedura Usuwania",
+					a: "a. [Polityka Przechowywania Danych] Ta Aplikacja działa wyłącznie w trybie na urządzeniu (On-device) i nie przechowuje danych osobowych ani danych zdrowotnych na zewnętrznych serwerach. Wszystkie dane są bezpiecznie zapisywane wyłącznie w urządzeniu użytkownika.",
+					b: "b. [Procedura Usuwania Danych] Ponieważ Aplikacja nie przechowuje danych na serwerach zewnętrznych, Firma nie może samodzielnie przechowywać ani usuwać danych użytkownika. Użytkownik może natychmiast i całkowicie usunąć dane, odinstalowując Aplikację (w tym czyszcząc dane biometryczne i pamięć podręczną).",
+				},
+				dataProcessing: {
+					title:
+						"7. Przetwarzanie Danych Osobowych i Wrażliwych Danych Użytkownika",
+					a: "a. [Procedura Bezpiecznego Przetwarzania] Firma nie przesyła, nie udostępnia ani nie sprzedaje danych osobowych i wrażliwych danych zdrowotnych użytkownika na serwery zewnętrzne i przetwarza je bezpiecznie wyłącznie wewnątrz urządzenia.",
+					b: "b. [Zbieranie Danych w Celu Poprawy Błędów i Jakości] Firma korzysta z usług stron trzecich (Sentry i Firebase Crashlytics) w celu poprawy stabilności aplikacji. Gromadzone dane ograniczają się do anonimowych informacji o urządzeniu i logach błędów, wykluczając dane osobowe, takie jak imię i nazwisko czy dane zdrowotne.",
+					c: "c. [Linki do Polityk Prywatności Zewnętrznych Dostawców] Zebrane logi są bezpiecznie zarządzane zgodnie z przepisami dostawców. (Polityka prywatności Sentry: https://sentry.io/privacy/ , Polityka prywatności Google Crashlytics: https://firebase.google.com/support/privacy)",
+				},
+				subTitle: "Obowiązuje od 1 lutego 2024 r. Zmieniono 1 lipca 2026 r.",
+				lang: "Polski",
+			},
+		},
+	},
+	// 조지아어 (Georgia)
+	ka: {
+		translation: {
+			terms: {
+				title: "კონფიდენციალურობის პოლიტიკა",
+				policyInfo: {
+					intro:
+						"წინამდებარე კონფიდენციალურობის პოლიტიკა ვრცელდება [Lameditech]-ის (შემდგომში „კომპანია“) მიერ მოწოდებულ აპლიკაციაზე [wecareu] (შემდგომში „აპლიკაცია“).",
+				},
+				privacy: {
+					title: "1. პერსონალური მონაცემების დაცვა",
+					a: "ა. მომხმარებელმა უსაფრთხოდ უნდა მართოს თავისი მოწყობილობა პერსონალური მონაცემების დასაცავად.",
+					b: "ბ. კომპანია ყველაფერს აკეთებს მომხმარებლის მონაცემების დასაცავად და არ გადასცემს მათ მესამე პირებს.",
+				},
+				service: {
+					title: "2. მომსახურებით სარგებლობა",
+					a: "ა. მომხმარებელმა უნდა გამოიყენოს ეს მომსახურება მხოლოდ კანონიერი მიზნებისთვის და არ უნდა დაარღვიოს სხვათა უფლებები.",
+					b: "ბ. მომსახურების გამოყენებისას უკანონო ქმედებების გამოვლენისას, სრული პასუხისმგებლობა ეკისრება მომხმარებელს.",
+				},
+				serviceChange: {
+					title: "3. მომსახურების მიწოდება და ცვლილება",
+					a: "ა. კომპანია ყველაფერს აკეთებს მომსახურების უზრუნველსაყოფად და საჭიროების შემთხვევაში, წინასწარი შეტყობინებით, შეცვლის შინაარსს.",
+				},
+				limited: {
+					title: "4. პასუხისმგებლობის შეზღუდვა",
+					a: "ა. კომპანია ცდილობს უზრუნველყოს სტაბილური მომსახურება, თუმცა არ იღებს პასუხისმგებლობას გამოყენების შედეგად წარმოშობილ ზიანზე.",
+				},
+				termsChange: {
+					title: "5. პირობების ცვლილება",
+					a: "ცვლილებების შესახებ შეტყობინება გამოქვეყნდება ვებგვერდზე ან აპლიკაციაში.",
+				},
+				storagePolicy: {
+					title: "6. მონაცემთა შენახვის პოლიტიკა და წაშლის პროცედურა",
+					a: "ა. [მონაცემთა შენახვის პოლიტიკა] ეს აპლიკაცია მუშაობს ლოკალურად მოწყობილობაზე (On-device) და არ ინახავს მომხმარებლის პერსონალურ და ჯანმრთელობის მონაცემებს გარეგან სერვერებზე. ყველა მონაცემი უსაფრთხოდ ინახება მხოლოდ მომხმარებლის მოწყობილობაში.",
+					b: "ბ. [მონაცემთა წაშლის პროცედურა] ვინაიდან აპლიკაცია არ ინახავს მონაცემებს გარეგან სერვერებზე, კომპანიას არ შეუძლია მათი წაშლა. მომხმარებელს შეუძლია მონაცემების სრული წაშლა აპლიკაციის წაშლით (ბიომეტრიული და ქეშ მონაცემების ჩათვლით).",
+				},
+				dataProcessing: {
+					title: "7. პერსონალური და სენსიტიური მონაცემების დამუშავება",
+					a: "ა. [უსაფრთხო დამუშავება] კომპანია არ გადასცემს ან ყიდის მომხმარებლის ჯანმრთელობისა და პერსონალურ მონაცემებს გარეგან სერვერებზე. დამუშავება ხდება მხოლოდ მოწყობილობის შიგნით.",
+					b: "ბ. [შეცდომების შეგროვება და ხარისხის გაუმჯობესება] კომპანია იყენებს Sentry-სა და Firebase Crashlytics-ს შეცდომების შესაგროვებლად. ეს მონაცემები ანონიმურია და არ შეიცავს პერსონალურ ან ჯანმრთელობის იდენტიფიცირებად ინფორმაციას.",
+					c: "გ. [მესამე მხარის პოლიტიკის ბმულები] შეგროვებული ლოგები იმართება პროვაიდერების უსაფრთხოების წესების შესაბამისად. (Sentry: https://sentry.io/privacy/ , Google Crashlytics: https://firebase.google.com/support/privacy)",
+				},
+				subTitle:
+					"ძალაშია 2024 წლის 1 თებერვლიდან. რედაქტირებულია 2026 წლის 1 ივლისს.",
+				lang: "ქართული",
+			},
+		},
+	},
+	// 우즈베크어 (Uzbekistan - Latn)
+	uz: {
+		translation: {
+			terms: {
+				title: "Muxfiylik Siyosati",
+				policyInfo: {
+					intro:
+						"Ushbu Maxfiylik siyosati [Lameditech] (keyingi o'rinlarda 'Kompaniya') tomonidan taqdim etilgan [wecareu] (keyingi o'rinlarda 'Ilova') ilovasiga nisbatan qo'llaniladi.",
+				},
+				privacy: {
+					title: "1. Shaxsiy Ma'lumotlarni Himoya Qilish",
+					a: "a. Foydalanuvchi shaxsiy ma'lumotlarini xavfsiz saqlash uchun qurilmasini xavfsiz boshqarishi kerak.",
+					b: "b. Kompaniya foydalanuvchilarning shaxsiy ma'lumotlarini ҳimoya qilishga harakat qiladi va ularni uchinchi shaxslarga bermaydi.",
+				},
+				service: {
+					title: "2. Xizmatdan Foydalanish",
+					a: "a. Foydalanuvchilar ushbu Xizmatdan faqat qonuniy maqsadlarda foydalanishlari va boshqalarning huquqlarini buzmasliklari kerak.",
+					b: "b. Xizmatdan foydalanish paytida noqonuniy harakatlar aniqlansa, to'liq javobgarlik foydalanuvchi zimmasida bo'ladi.",
+				},
+				serviceChange: {
+					title: "3. Xizmatlarni Taqdim Etish va O'zgartirish",
+					a: "a. Kompaniya ushbu Xizmatni taqdim etish uchun barcha imkoniyatlarni ishga soladi va zarurat tug'ilganda oldindan ogohlantirish orqali xizmat mazmunini o'zgartirishi mumkin.",
+				},
+				limited: {
+					title: "4. Javobgarlik Cheklanishi",
+					a: "a. Kompaniya xizmat ko'rsatishni ta'minlashga harakat qiladi, ammo xizmatdan foydalanish natijasida kelib chiqqan zararlar uchun javobgarlikni o'z zimmasiga olmaydi.",
+				},
+				termsChange: {
+					title: "5. Shartlarning O'zgarishi",
+					a: "O'zgarishlar haqida veb-sayt yoki ilova orqali e'lon qilinadi.",
+				},
+				storagePolicy: {
+					title: "6. Ma'lumotlarni Saqlash Siyosati va O'chirish Tartibi",
+					a: "a. [Ma'lumotlarni Saqlash Siyosati] Ushbu Ilova faqat qurilmaning o'zida (On-device) ishlaydi va foydalanuvchining shaxsiy va salomatlik ma'lumotlarini tashqi serverlarda saqlamaydi. Barcha ma'lumotlar faqat foydalanuvchi qurilmasida saqlanadi.",
+					b: "b. [Ma'lumotlarni O'chirish Tartibi] Ilova ma'lumotlarni tashqi serverlarda saqlamagani uchun Kompaniya ularni o'chira olmaydi. Foydalanuvchi ilovani o'chirish orqali barcha ma'lumotlarni darhol to'liq o'chirib tashlashi mumkin.",
+				},
+				dataProcessing: {
+					title: "7. Shaxsiy va Maxfiy Ma'lumotlarni Qayta Ishlash",
+					a: "a. [Xavfsiz Qayta Ishlash] Kompaniya foydalanuvchining shaxsiy va salomatlik ma'lumotlarini tashqi serverlarga uzatmaydi, sotmaydi va faqat qurilma ichida xavfsiz qayta ishlaydi.",
+					b: "b. [Xatoliklarni Yig'ish] Kompaniya ilovani yaxshilash va xatoliklarni yig'ish uchun Sentry va Firebase Crashlytics xizmatlaridan foydalanadi. Yig'ilgan ma'lumotlar anonim bo'lib, shaxsni tasdiqlovchi ma'lumotlarni o'z ichiga olmaydi.",
+					c: "c. [Tashqi Havolalar] Yig'ilgan jurnallar provayderlarning xavfsizlik qoidalariga muvofiq boshqariladi. (Sentry: https://sentry.io/privacy/ , Google Crashlytics: https://firebase.google.com/support/privacy)",
+				},
+				subTitle:
+					"2024-yil 1-fevraldan kuchga kirgan. 2026-yil 1-julda tahrirlangan.",
+				lang: "O'zbekcha",
+			},
+		},
+	},
+	// 카자흐어 (Kazakhstan)
+	kk: {
+		translation: {
+			terms: {
+				title: "Купиялылық саясаты",
+				policyInfo: {
+					intro:
+						"Осы Құпиялылық саясаты [Lameditech] (бұдан әрі «Компания») ұсынатын [wecareu] (бұдан әрі «Қолданба») қолданбасына қолданылады.",
+				},
+				privacy: {
+					title: "1. Жеке деректерді қорғау",
+					a: "a. Пайдаланушы жеке деректерін қорғау үшін құрылғысын қауіпсіз басқаруы керек.",
+					b: "b. Компания пайдаланушылардың жеке деректерін қорғауға тырысады және оларды үшінші тұлғаларға бермейді.",
+				},
+				service: {
+					title: "2. Қызметті пайдалану",
+					a: "a. Пайдаланушылар бұл қызметті тек заңды мақсаттарда пайдалануы тиіс және басқалардың құқықтарын бұзбауы керек.",
+					b: "b. Қызметті пайдалану кезінде заңсыз әрекеттер анықталса, барлық жауапкершілік пайдаланушыға жүктеледі.",
+				},
+				serviceChange: {
+					title: "3. Қызметтерді ұсыну және өзгерту",
+					a: "a. Компания бұл қызметті ұсыну үшін барлық мүмкіндіктерді жасайды және қажет болған жағдайда алдын ала ескерту арқылы өзгерте алады.",
+				},
+				limited: {
+					title: "4. Жауапкершілікті шектеу",
+					a: "a. Компания қызметтің дұрыс көрсетілуін қамтамасыз етуге тырысады, бірақ пайдаланудан туындаған залалдар үшін жауап бермейді.",
+				},
+				termsChange: {
+					title: "5. Шарттардың өзгеруі",
+					a: "Өзгерістер туралы хабарландыру веб-сайт немесе қолданба арқылы жасалады.",
+				},
+				storagePolicy: {
+					title: "6. Деректерді сақтау саясаты және жою процедурасы",
+					a: "a. [Деректерді сақтау саясаты] Бұл қолданба тек құрылғыда (On-device) жұмыс істейді және жеке немесе денсаулық деректерін сыртқы серверлерде сақтамайды. Барлық деректер тек құрылғыда қауіпсіз сақталады.",
+					b: "b. [Деректерді жою процедурасы] Қолданба сыртқы серверлерде деректерді сақтамайтындықтан, Компания оларды жоя алмайды. Пайдаланушы қолданбаны жою арқылы барлық деректерді дереу толық жоя алады.",
+				},
+				dataProcessing: {
+					title: "7. Жеке және сезімтал деректерді өңдеу",
+					a: "a. [Қауіпсіз өңдеу] Компания жеке және денсаулық деректерін сыртқы серверлерге жібермейді немесе сатпайды және оларды тек құрылғы ішінде өңдейді.",
+					b: "b. [Қателерді жинау] Қолданбаның тұрақтылығын арттыру үшін Sentry және Firebase Crashlytics қызметтері қолданылады. Жиналған деректер анонимді болып табылады және жеке басты анықтайтын мағлұматтарды камтымайды.",
+					c: "c. [Үшінші тарап саясаттарының сілтемелері] Жиналған журналдар провайдерлердің қауіпсіздік ережелеріне сәйкес басқарылады. (Sentry: https://sentry.io/privacy/ , Google Crashlytics: https://firebase.google.com/support/privacy)",
+				},
+				subTitle:
+					"2024 жылғы 1 ақпаннан бастап күшіне енеді. 2026 жылғы 1 шілдеде қайта қаралған.",
+				lang: "Қазақ тілі",
+			},
+		},
+	},
+	// 인도네시아어 (Indonesia)
+	id: {
+		translation: {
+			terms: {
+				title: "Kebijakan Privasi",
+				policyInfo: {
+					intro:
+						"Kebijakan Privasi ini berlaku untuk aplikasi [wecareu] (selanjutnya disebut 'Aplikasi') yang disediakan oleh [Lameditech] (selanjutnya disebut 'Perusahaan').",
+				},
+				privacy: {
+					title: "1. Perlindungan Informasi Pribadi",
+					a: "a. Pengguna harus mengelola perangkat mereka dengan aman untuk melindungi informasi pribadi mereka.",
+					b: "b. Perusahaan berupaya melindungi informasi pribadi pengguna dan tidak memberikan informasi pengguna kepada pihak ketiga.",
+				},
+				service: {
+					title: "2. Penggunaan Layanan",
+					a: "a. Pengguna harus menggunakan Layanan ini hanya untuk tujuan yang sah dan tidak boleh melanggar hak orang lain.",
+					b: "b. Jika tindakan ilegal terdeteksi selama penggunaan Layanan, pengguna bertanggung jawab penuh atas tindakan tersebut.",
+				},
+				serviceChange: {
+					title: "3. Penyediaan dan Perubahan Layanan",
+					a: "a. Perusahaan melakukan yang terbaik untuk menyediakan Layanan ini dan dapat mengubah konten Layanan setelah pemberitahuan sebelumnya jika diperlukan.",
+				},
+				limited: {
+					title: "4. Batasan Tanggung Jawab",
+					a: "a. Perusahaan berusaha untuk memastikan penyediaan layanan yang normal, tetapi tidak bertanggung jawab atas kerusakan atau masalah yang timbul dari penggunaan Layanan.",
+				},
+				termsChange: {
+					title: "5. Perubahan Syarat dan Ketentuan",
+					a: "Pemberitahuan mengenai perubahan akan disampaikan melalui situs web atau aplikasi.",
+				},
+				storagePolicy: {
+					title: "6. Kebijakan Penyimpanan Data dan Prosedur Penghapusan",
+					a: "a. [Kebijakan Penyimpanan Data] Aplikasi ini beroperasi sepenuhnya secara On-device dan tidak menyimpan data pribadi serta data kesehatan pada server eksternal terpisah. Semua data disimpan secara aman hanya di dalam perangkat pengguna.",
+					b: "b. [Prosedur Penghapusan Data] Karena Aplikasi tidak menyimpan data pengguna pada server eksternal, Perusahaan tidak dapat menyimpan atau menghapus data pengguna secara sewenang-wenang. Pengguna dapat langsung menghapus semua data dengan menghapus instalasi Aplikasi (termasuk data biometrik dan cache).",
+				},
+				dataProcessing: {
+					title: "7. Pemrosesan Data Pribadi dan Data Sensitif Pengguna",
+					a: "a. [Prosedur Pemrosesan Aman] Perusahaan tidak mengirimkan, membagikan, atau menjual informasi pribadi dan data kesehatan sensitif pengguna ke server eksternal, dan memprosesnya secara aman hanya di dalam perangkat.",
+					b: "b. [Pengumpulan Data untuk Kesalahan dan Peningkatan Kualitas] Perusahaan menggunakan layanan pihak ketiga, Sentry dan Firebase Crashlytics, untuk mengumpulkan log kesalahan. Data yang dikumpulkan bersifat anonim dan tidak mencakup data pribadi yang dapat diidentifikasi.",
+					c: "c. [Tautan Kebijakan Privasi Pihak Ketiga] Log kesalahan dikelola dengan aman sesuai dengan peraturan keamanan masing-masing penyedia layanan. (Kebijakan Privasi Sentry: https://sentry.io/privacy/ , Kebijakan Privasi Google Crashlytics: https://firebase.google.com/support/privacy)",
+				},
+				subTitle: "Berlaku mulai 1 Februari 2024. Direvisi pada 1 Juli 2026.",
+				lang: "Bahasa Indonesia",
+			},
+		},
+	},
+	// 베트남어 (Vietnam)
+	vi: {
+		translation: {
+			terms: {
+				title: "Chính Sách Bảo Mật",
+				policyInfo: {
+					intro:
+						"Chính sách bảo mật này áp dụng cho ứng dụng [wecareu] (sau đây gọi là 'Ứng dụng') do [Lameditech] (sau đây gọi là 'Công ty') cung cấp.",
+				},
+				privacy: {
+					title: "1. Bảo Vệ Thông Tin Cá Nhân",
+					a: "a. Người dùng phải quản lý thiết bị của mình một cách an toàn để bảo vệ thông tin cá nhân.",
+					b: "b. Công ty nỗ lực bảo vệ thông tin cá nhân của người dùng và không cung cấp thông tin người dùng cho bên thứ ba.",
+				},
+				service: {
+					title: "2. Sử Dụng Dịch Vụ",
+					a: "a. Người dùng chỉ được sử dụng Dịch vụ này cho các mục đích hợp pháp và không được xâm phạm quyền lợi của người khác.",
+					b: "b. Nếu phát hiện hành vi vi phạm pháp luật trong quá trình sử dụng Dịch vụ, người dùng sẽ chịu toàn bộ trách nhiệm.",
+				},
+				serviceChange: {
+					title: "3. Cung Cấp và Thay Đổi Dịch Vụ",
+					a: "a. Công ty cố gắng hết sức để cung cấp Dịch vụ này và có thể thay đổi nội dung Dịch vụ sau khi thông báo trước nếu cần thiết.",
+				},
+				limited: {
+					title: "4. Giới Hạn Trách Nhiệm",
+					a: "a. Công ty nỗ lực đảm bảo việc cung cấp dịch vụ bình thường, nhưng không chịu trách nhiệm cho bất kỳ thiệt hại hoặc sự cố nào phát sinh từ việc sử dụng Dịch vụ.",
+				},
+				termsChange: {
+					title: "5. Thay Đổi Điều Khoản",
+					a: "Thông báo về việc thay đổi sẽ được đăng tải thông qua trang web hoặc ứng dụng.",
+				},
+				storagePolicy: {
+					title: "6. Chính Sách Lưu Trữ Dữ Liệu và Quy Trình Xóa",
+					a: "a. [Chính Sách Lưu Trữ Dữ Liệu] Ứng dụng này hoạt động hoàn toàn trên thiết bị (On-device) và không lưu trữ thông tin cá nhân cũng như dữ liệu sức khỏe trên máy chủ bên ngoài. Tất cả dữ liệu chỉ được lưu trữ an toàn trên thiết bị của người dùng.",
+					b: "b. [Quy Trình Xóa Dữ Liệu] Vì Ứng dụng không lưu trữ dữ liệu trên máy chủ bên ngoài, Công ty không thể tùy ý lưu giữ hoặc xóa dữ liệu của người dùng. Người dùng có thể xóa hoàn toàn tất cả dữ liệu bằng cách gỡ cài đặt Ứng dụng (bao gồm xóa dữ liệu sinh trắc học và bộ nhớ tạm).",
+				},
+				dataProcessing: {
+					title: "7. Xử Lý Thông Tin Cá Nhân và Dữ Liệu Nhạy Cảm",
+					a: "a. [Quy Trình Xử Lý An Toàn] Công ty không truyền, chia sẻ hoặc bán thông tin cá nhân và dữ liệu sức khỏe nhạy cảm của người dùng sang máy chủ bên ngoài và chỉ xử lý an toàn bên trong thiết bị.",
+					b: "b. [Thu Thập Dữ Liệu Lỗi và Cải Tiến Chất Lượng] Công ty sử dụng dịch vụ của bên thứ ba là Sentry và Firebase Crashlytics để thu thập nhật ký lỗi. Dữ liệu thu thập được là vô danh và không bao gồm thông tin cá nhân có thể định danh.",
+					c: "c. [Liên Kết Chính Sách Bảo Mật Của Bên Thứ Ba] Nhật ký lỗi thu thập được quản lý an toàn theo quy định bảo mật của từng nhà cung cấp. (Chính sách bảo mật Sentry: https://sentry.io/privacy/ , Chính sách bảo mật Google Crashlytics: https://firebase.google.com/support/privacy)",
+				},
+				subTitle:
+					"Có hiệu lực từ ngày 01 tháng 02 năm 2024. Sửa đổi ngày 01 tháng 07 năm 2026.",
+				lang: "Tiếng Việt",
+			},
+		},
+	},
 };
 
 i18n
